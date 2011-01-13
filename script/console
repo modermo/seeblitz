@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+$:.unshift('.')
+require 'irb'
+require File.join(File.dirname(__FILE__), '..', 'yodel', 'yodel')
+require File.join(File.dirname(__FILE__), '..', 'settings')
+$application = Yodel::Application.new
+IRB.start(__FILE__)
